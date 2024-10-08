@@ -9,16 +9,17 @@ function insert(num)
 }
 
 function votoNulo() {
-    if(true) {
-        document.querySelector('.show__numbers-display'). innerHTML = "Voto Nulo?";
-        imgCandidato.style.display = 'none';
-        nameCandidato.innerHTML = '';    
-    }
+    document.querySelector('.show__numbers-display'). innerHTML = "Voto Nulo?";
+    nameCandidato.innerHTML = '';
 }
 
 function corrigeVoto() 
 {
     var resultado = document.querySelector('.show__numbers-display').innerHTML;
-    document.querySelector('.show__numbers-display').innerHTML = resultado.substring(0, resultado.length -1);    
+    document.querySelector('.show__numbers-display').innerHTML = resultado.substring(0, resultado.length -1);
+    nameCandidato.innerHTML = ''   
 }
 
+function confirmVoto() {
+    
+}
