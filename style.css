@@ -1,5 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #cccccc34;
+}
+
+.urna__container {
+    width: 50vw;
+    height: 60vh;
+    margin-inline: auto;
+    margin-block: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:4px solid #000;
+    border-radius: 10px;
+}
+
+.left__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    flex: 0.8;
+}
+
+.show__numbers {
+    margin-top: 15px;
+    width: 70%;
+    height: 12%;
+}
+
+.show__numbers-display {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.img__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.urna__candidato {
+    min-width: 100%;
+    max-height: 60%;
+    border-radius: 360px;
+    margin-bottom: 1.25rem;
+}
+
+.name__candidato {
+    font-size: 2rem;
+    margin-inline: auto;
+    font-weight: 600;
+}
+
+
+/* Lado direito */
+
+
+.right__container {
+    height: 100%;
+    display: flex;
+    text-align: center;    
+    flex: 1.2;
+}
+
+.urna__numbers {
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn {
+    background-color: #464343;
+    margin-top: 1rem;
+    width: 25%;
+    margin-inline: 15px;
+    gap: 2rem;
+    height: 15%;
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.btn-0 {
+    width: 25%;
+    margin-bottom: 1.5rem;
+}
+
+
+.btns {
+    width: 28%;
+    height: 13%;
+    margin: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.corrige__btn {
+    background-color: rgba(192, 46, 46, 0.836);
+}
+
+.confirma__btn {
+    background-color: rgba(46, 214, 46, 0.808);
 }

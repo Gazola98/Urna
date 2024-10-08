@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>UrnaEletrônica</title>
 </head>
 <body>
-    <h2>Urna Eletrônica</h2>
-    <div class="urnacontainer">
-        <div class="show__numbers">
-            <input type="text">
+    <div class="urna__container">
+        <div class="left__container">
+            <div class="show__numbers">
+                <input type="text" class="show__numbers-display">
+            </div>
+            <div class="img__name">
+                <img src="images/teste.avif" class="urna__candidato" alt="candidato">
+                <span class="name__candidato">Name</span>
+            </div>
         </div>
-        <div class="urna__img">IMG</div>
-        <div class="urna__numbers">
-            <input type="button" class="btn" value="1">
-            <input type="button" class="btn" value="2">
-            <input type="button" class="btn" value="3">
-            <input type="button" class="btn" value="4">
-            <input type="button" class="btn" value="5">
-            <input type="button" class="btn" value="6">
-            <input type="button" class="btn" value="7">
-            <input type="button" class="btn" value="8">
-            <input type="button" class="btn" value="9">
-            <input type="button" class="btn" value="0">
-            <input type="button" class="corrige__btn" value="Corrige">
-            <input type="button" class="confirm__btn" value="Confirma">
+        <div class="right__container">
+            <div class="urna__numbers">
+                <input type="button" class="btn btn-1" value="1">
+                <input type="button" class="btn btn-2" value="2">
+                <input type="button" class="btn btn-3" value="3">
+                <input type="button" class="btn btn-4" value="4">
+                <input type="button" class="btn btn-5" value="5">
+                <input type="button" class="btn btn-6" value="6">
+                <input type="button" class="btn btn-7" value="7">
+                <input type="button" class="btn btn-8" value="8">
+                <input type="button" class="btn btn-9" value="9">
+                <input type="button" class="btn btn-0" value="0">
+                <br>
+                <input type="button" class="btns branco__btn" value="Branco">
+                <input type="button" class="btns corrige__btn" value="Corrige">
+                <input type="button" class="btns confirma__btn" value="Confirma">
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
