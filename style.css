@@ -11,6 +11,12 @@ body {
     background-color: #cccccc34;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 .urna__container {
     width: 50vw;
     height: 60vh;
@@ -50,19 +56,21 @@ body {
 }
 
 .img__name {
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
 }
 
 .urna__candidato {
-    min-width: 100%;
+    min-width: 70%;
     max-height: 70%;
     border-radius: 360px;
     margin-bottom: 1.25rem;
 }
 
 .name__candidato {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-inline: auto;
     font-weight: 600;
 }
@@ -91,34 +99,26 @@ body {
     margin-top: 1rem;
     width: 25%;
     margin-inline: 15px;
-    gap: 2rem;
     height: 15%;
     color: #ffff;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     font-weight: 600;
     border-radius: 3px;
     margin-top: 1.5rem;
 }
 
-.btn-0 {
-    width: 25%;
-    margin-bottom: 1.5rem;
-}
-
-
 .btns {
-    width: 28%;
-    height: 13%;
-    margin: 8px;
-    font-size: 1.25rem;
+    width: 30%;
+    height: 15%;
+    margin-left: 5px;
+    font-size: 1.3vw;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 6px;
     text-transform: uppercase;
-    margin-top: 1.5rem;
+    margin-top: 0.8rem;
 }
 
 .btn:active,
-.btn-0:active,
 .btns:active {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 1.1rem;
@@ -130,4 +130,164 @@ body {
 
 .confirma__btn {
     background-color: rgba(46, 214, 46, 0.808);
+}
+
+/* Responsividade */
+
+@media (width < 1640px) {
+    .show__numbers-display {
+        font-size: 2.3rem;
+    }
+}
+
+@media (width < 1540px) {
+    .show__numbers-display {
+        font-size: 2rem;
+    }
+}
+
+@media (width < 1366px) {
+    .urna__numbers .btn {
+        font-size: 1.1vw;
+        width: 22%;
+        height: 15%;
+    }
+
+    .urna__candidato {
+        width: 40%;
+        margin-left: 2rem;
+    }
+
+    .name__candidato {
+        font-size: 2ch;
+    }
+
+    .btns {
+        height: 12%;
+        font-size: 1.1vw;
+    }
+}
+
+@media (width < 1125px) {
+    .urna__container {
+        width: 50vw;
+    }
+
+    .urna__numbers {
+        display: inline-table;
+    }
+
+    .urna__candidato {
+        width: 40%;
+        margin-left: 1.5rem;
+    }
+
+    .name__candidato {
+        font-size: 2ch;
+    }
+
+    .btns {
+        width: 25%;
+        height: 15%;
+    }
+}
+
+@media (width < 1075px) {
+
+    .urna__container {
+        width: 48vw;
+    }
+
+    .show__numbers-display {
+        font-size: 1.5rem;
+        margin-inline: auto;
+    }
+
+    .name__candidato {
+        font-size: 1.1rem;
+    }
+
+    .urna__candidato {
+        width: 30%;
+        margin-left: 1.5rem;
+    }
+
+    .urna__numbers {
+        display: inline-table;
+    }
+
+    .urna__numbers .btn {
+        font-size: 1rem;
+    }
+
+    .btns {
+        width: 30%;
+        height: 13%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (width < 950px) {
+    .urna__container {
+        width: 60vw;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .show__numbers-display {
+        margin-inline: auto;
+    }
+
+    .urna__candidato {
+        margin-inline: auto;
+        width: 85%;
+        height: 60%;
+        margin-bottom: 0.8rem;
+    }
+
+    .name__candidato {
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right__container {
+        width: 100%;
+    }
+
+    .urna__numbers {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .urna__numbers .btn {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .btns {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (width < 697px) {
+    .urna__container {
+        height: 70vh;
+    }
+
+    .btns {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (width < 550px) {
+    .urna__container {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 5rem;
+    }
 }

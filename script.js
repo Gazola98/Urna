@@ -7,24 +7,24 @@ const confirmar = document.querySelector('.onfirma__btn');
 
 const bioCandidatos = [
     {
-        name: "Parmalat",
-        numeroVoto: 171,
-        fotoCandidato: './images/zeca.avif'
+        name: "Antônio Rocha",
+        numeroVoto: 17231,
+        fotoCandidato: './images/grandfather.png'
     },
     {
-        name: "vazio",
-        numeroVoto: 1327,
-        fotoCandidato: ''
+        name: "Mariana Almeida",
+        numeroVoto: 135627,
+        fotoCandidato: './images/woman-pink.png'
     }, 
     {
-        name: "Manásses",
-        numeroVoto: 1111,
-        fotoCandidato: ''
+        name: "Cauã Alves",
+        numeroVoto: 111231,
+        fotoCandidato: './images/man-red-tie.png'
     },
     {
-        name: "arame",
+        name: "Alex Gomes",
         numeroVoto: 993423,
-        fotoCandidato: ''
+        fotoCandidato: './images/man.png'
     }
 ];
 
@@ -42,6 +42,9 @@ function insert(num) {
     } else if (voto == bioCandidatos[2].numeroVoto) {
         nameCandidato.innerHTML = bioCandidatos[2].name;
         imgCandidato.src = bioCandidatos[2].fotoCandidato;
+    } else if (voto == bioCandidatos[3].numeroVoto) {
+        nameCandidato.innerHTML = bioCandidatos[3].name;
+        imgCandidato.src = bioCandidatos[3].fotoCandidato;
     }
 }
 
