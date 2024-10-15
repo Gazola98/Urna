@@ -8,22 +8,22 @@ const confirmar = document.querySelector('.onfirma__btn');
 const bioCandidatos = [
     {
         name: "Antônio Rocha",
-        numeroVoto: 17231,
+        numeroVoto: 1111,
         fotoCandidato: './images/grandfather.png'
     },
     {
         name: "Mariana Almeida",
-        numeroVoto: 135627,
+        numeroVoto: 2222,
         fotoCandidato: './images/woman-pink.png'
     }, 
     {
         name: "Cauã Alves",
-        numeroVoto: 111231,
+        numeroVoto: 3333,
         fotoCandidato: './images/man-red-tie.png'
     },
     {
         name: "Alex Gomes",
-        numeroVoto: 993423,
+        numeroVoto: 4444,
         fotoCandidato: './images/man.png'
     }
 ];
